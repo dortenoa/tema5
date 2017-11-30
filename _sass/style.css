@@ -1,3 +1,682 @@
+@charset "UTF-8";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+* {
+  box-sizing: border-box; }
 
+html, body {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+image {
+  width: auto;
+  height: auto; }
+
+.centerContent, footer div {
+  width: 75%;
+  /* tilpasse sig størrelsen i forhold til vinduet*/
+  margin: auto; }
+
+body {
+  /*background-color: pink;*/
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  background-image: url(); }
+
+/*Header, navbar og hamburger start*/
+header {
+  width: 100%;
+  height: 120px;
+  background-color: #ffffff;
+  position: fixed;
+  /*husk at angiv width*/
+  padding-top: 15px;
+  z-index: 1;
+  margin-bottom: 0px; }
+  header div {
+    /*i element med fa på sig*/
+    /*nav bar start*/
+    /*navbar slut*/ }
+    header div h3 {
+      color: #000000;
+      font-family: 'Lato', sans-serif;
+      float: left;
+      font-size: 120%;
+      margin-top: 37px;
+      margin-bottom: 12px;
+      /*line-height: 100px;*/ }
+    header div i.fa {
+      display: block;
+      width: 40px;
+      height: 40px;
+      /*logo flyder stadig rundt op i hjørnet*/
+      text-align: center;
+      /* i midten nu men stadig i toppen*/
+      float: left;
+      /*knapper kommer tilbage*/
+      line-height: 100px;
+      /*positioner vores knapper vertical*/
+      font-size: 40px;
+      /*logostørrelse*/
+      color: #000000;
+      /*logofarve*/
+      margin-right: 1%; }
+    header div nav {
+      position: absolute;
+      margin-top: 35px;
+      float: right;
+      width: 75%;
+      padding-right: 5px; }
+    header div nav ul {
+      list-style-type: none;
+      margin: 0;
+      overflow: hidden;
+      padding-top: 4px; }
+    header div nav ul li {
+      float: right; }
+    header div nav ul li a {
+      display: block;
+      padding: 0px 5px 0px 5px;
+      text-decoration: none;
+      font-size: 1rem;
+      /*text-transform: uppercase;*/
+      color: #000000;
+      font-family: 'Lato', sans-serif; }
+    header div li a:hover {
+      color: #80cbc4; }
+
+/*Hamburgermenuen starter her*/
+/*hvordan overlayet ser ud når det kommer frem*/
+.navi {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s; }
+
+/*hvordan ser indholdet ud i hamburgermenuen*/
+.overlayer {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif; }
+
+/*hvordan linkene ser ud i overlay*/
+.navi a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  /*tekststørrelse i åben menu*/
+  color: #ffffff;
+  display: block;
+  transition: 0.3s; }
+
+/*giver farve når der holdes over indholdet*/
+.navi a:hover, .overlay a:focus {
+  color: #80cbc4; }
+
+/*position af x/lukke knappen i menuen*/
+.navi .closebut {
+  position: absolute;
+  top: 15px;
+  right: 5%;
+  padding: 0;
+  font-size: 60px; }
+
+/*hamburgerikon*/
+span {
+  position: absolute;
+  right: 5%;
+  margin-top: 20px;
+  font-size: 2em;
+  color: #000000;
+  cursor: pointer; }
+
+/*hamburgermenuen slutter her*/
+/*Header, navbar og hamburger slut*/
+/*CSS på index*/
+main {
+  width: 100%;
+  height: auto;
+  /*background-color: pink;*/
+  padding-top: 70px;
+  padding-bottom: 1px;
+  /*div{
+    @extend .centerContent;
+  }*/
+  /*INDEX Section .why class post-it area start*/
+  /*why class post-it area slut*/
+  /*INDEX Section .how class post-it area start*/
+  /*how class post-it area slut*/
+  /*INDEX Section .what class post-it area start*/
+  /*how class post-it area slut*/
+  /*Index og PORTFOLIO Section MASONRY class start*/
+  /*PORTFOLIO Section MASONRY class slut*/
+  /*Index siden*/
+  /*Index slut*/
+  /*portfolio start*/
+  /*overlaytext over billeder start*/
+  /*overlaytext over billeder slut*/
+  /*facilitering kickoff tekst i bunden*/ }
+  main section.up {
+    height: 640px;
+    margin-bottom: 2em;
+    /*background-image: url(../img/wcsort.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*border-bottom: solid 3px #bdbdbd;*/ }
+  main section .why {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-left: auto;
+    margin-right: auto; }
+    main section .why .item {
+      width: 15%;
+      /*margin: 1em;*/
+      border-radius: 4px;
+      float: left; }
+    main section .why img {
+      width: 100%;
+      height: auto; }
+  main section .how {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-left: auto;
+    margin-right: auto; }
+    main section .how .item {
+      width: 15%;
+      /*margin: 1em;*/
+      border-radius: 4px;
+      float: left; }
+    main section .how img {
+      width: 100%;
+      height: auto; }
+  main section .what {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-left: auto;
+    margin-right: auto; }
+    main section .what .item {
+      width: 15%;
+      /*margin: 1em;*/
+      border-radius: 4px;
+      float: left; }
+    main section .what img {
+      width: 100%;
+      height: auto; }
+  main section.center {
+    height: auto;
+    /*background-color: blue;*/
+    /*border-bottom: solid 3px #bdbdbd;*/ }
+    main section.center .masonry {
+      width: 100%;
+      margin-top: 3em;
+      margin-bottom: 2em;
+      text-align: center;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-content: space-around;
+      margin-left: auto;
+      margin-right: auto; }
+      main section.center .masonry .item {
+        margin: 1em;
+        border-radius: 4px;
+        float: left; }
+  main section.pdown {
+    height: 200px;
+    background-color: #212121;
+    border-bottom: solid 3px #bdbdbd;
+    margin-bottom: 0;
+    margin-top: 5em; }
+    main section.pdown h2 {
+      color: white;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 50px;
+      text-align: left;
+      margin-left: 13%; }
+    main section.pdown p {
+      color: white;
+      text-align: center;
+      text-align: left;
+      margin-left: 13%;
+      margin-right: 13%;
+      font-size: 16px;
+      margin-top: 0; }
+  main .containertext {
+    position: relative;
+    /*max-width: 356px;*/
+    width: auto;
+    margin: 0, auto; }
+  main .containertext img {
+    margin-bottom: -5px; }
+  main .containertext .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    /* Black background with transparency */
+    color: #f1f1f1;
+    width: 92%;
+    margin-left: 13.5px;
+    margin-bottom: 15px;
+    /*padding: 20px;*/ }
+  main .containertext .content p {
+    margin-top: -10px; }
+  main section.pfdown {
+    height: 200px;
+    background-color: #212121;
+    border-bottom: solid 3px #bdbdbd;
+    margin-bottom: 0; }
+    main section.pfdown h2 {
+      color: white;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 60px;
+      text-align: left;
+      margin-left: 13%; }
+    main section.pfdown p {
+      color: white;
+      text-align: center;
+      text-align: left;
+      margin-left: 13%;
+      font-size: 16px;
+      margin-top: 0; }
+  main section.dtdown {
+    height: 200px;
+    background-color: #212121;
+    border-bottom: solid 3px #bdbdbd;
+    margin-bottom: 0; }
+    main section.dtdown h2 {
+      color: white;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 50px;
+      text-align: left;
+      margin-left: 13%; }
+    main section.dtdown p {
+      color: white;
+      text-align: center;
+      text-align: left;
+      margin-left: 13%;
+      margin-right: 13%;
+      font-size: 16px;
+      margin-top: 0; }
+  main section.wdown {
+    height: 200px;
+    background-color: #212121;
+    border-bottom: solid 3px #bdbdbd;
+    margin-bottom: 0; }
+    main section.wdown h2 {
+      color: white;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 50px;
+      text-align: left;
+      margin-left: 13%; }
+    main section.wdown p {
+      color: white;
+      text-align: center;
+      text-align: left;
+      margin-left: 13%;
+      margin-right: 13%;
+      font-size: 16px;
+      margin-top: 0; }
+  main section.kickdown {
+    height: 200px;
+    background-color: #212121;
+    border-bottom: solid 3px #bdbdbd;
+    margin-bottom: 0; }
+    main section.kickdown h2 {
+      color: white;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 50px;
+      text-align: left;
+      margin-left: 13%; }
+    main section.kickdown p {
+      color: white;
+      text-align: center;
+      text-align: left;
+      margin-left: 13%;
+      margin-right: 13%;
+      font-size: 16px;
+      margin-top: 0; }
+  main section.down {
+    height: 200px;
+    background-color: #212121;
+    border-bottom: solid 3px #bdbdbd;
+    /*margin-bottom: 3%;*/ }
+    main section.down .h3 {
+      /*background-color: pink;*/
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 70%; }
+      main section.down .h3 h3 {
+        color: white;
+        text-align: center;
+        margin-bottom: 0;
+        padding-top: 65px;
+        font-family: 'Lato', sans-serif; }
+
+/*CSS på referencer.html start*/
+section.refdown {
+  height: 200px;
+  background-color: #212121;
+  border-bottom: solid 3px #bdbdbd;
+  margin-bottom: 0; }
+  section.refdown h2 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 50px;
+    text-align: left;
+    margin-left: 13%;
+    font-family: 'Lato', sans-serif; }
+  section.refdown p {
+    color: white;
+    text-align: center;
+    text-align: left;
+    margin-left: 13%;
+    margin-right: 13%;
+    font-size: 16px;
+    margin-top: 0; }
+
+.flex-item h3 button, h2 button, h1 button {
+  background-color: #ffffff;
+  font-size: 16px;
+  border-radius: 12px;
+  font-family: 'Lato', sans-serif; }
+
+.flex-item p {
+  font-family: 'Lato', sans-serif; }
+
+.flex-container {
+  padding-bottom: 2em;
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  background-color: white;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  align-content: space-around; }
+  .flex-container .flex-item {
+    background-color: #a1887f;
+    /*#b0bec5;*/
+    width: 32%;
+    margin-top: 2%;
+    float: left;
+    margin-bottom: 1%;
+    border-style: solid;
+    padding: 1% 1% 1% 1%; }
+  .flex-container .flex-itema {
+    background-color: #424242;
+    /*#b0bec5;*/
+    width: 32%;
+    color: white;
+    margin-top: 2%;
+    float: left;
+    margin-bottom: 1%;
+    border-style: solid;
+    border-color: black;
+    padding: 1% 1% 1% 1%; }
+  .flex-container .flex-item1 {
+    background-color: #a1887f;
+    width: 28%;
+    height: auto;
+    margin-top: 2%;
+    float: left;
+    border-style: solid;
+    padding: 1% 1% 1% 1%; }
+  .flex-container .flex-item2 {
+    width: 69%;
+    height: auto;
+    margin-top: 2%;
+    float: left;
+    padding: 1% 1% 1% 1%;
+    border-style: solid;
+    border-color: black;
+    background-color: #424242;
+    color: white; }
+    .flex-container .flex-item2 img {
+      float: right;
+      padding: 10px;
+      opacity: 0.8; }
+
+/*CSS referencer.html.slut*/
+/*CSS CV.html start*/
+.flex-itemcv p {
+  font-family: 'Lato', sans-serif; }
+
+.flex-containercv {
+  padding-bottom: 2em;
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  background-color: white;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  align-content: space-around; }
+  .flex-containercv .flex-itemcv {
+    background-color: #a1887f;
+    /*#b0bec5;*/
+    width: 98%;
+    height: auto;
+    margin-top: 2%;
+    float: left;
+    margin-bottom: 2%;
+    border-style: solid;
+    padding: 1% 1% 1% 1%; }
+    .flex-containercv .flex-itemcv img {
+      float: right;
+      padding: 10px;
+      opacity: 0.8; }
+  .flex-containercv .flex-itemcv1 {
+    background-color: #424242;
+    width: 98%;
+    height: auto;
+    margin-top: 2%;
+    float: left;
+    border-style: solid;
+    padding: 1% 1% 1% 1%;
+    color: white;
+    border-style: solid;
+    border-color: black; }
+  .flex-containercv .flex-itemcv2 {
+    width: 98%;
+    height: auto;
+    margin-top: 2%;
+    float: left;
+    padding: 1% 1% 1% 1%;
+    border-style: solid;
+    border-color: black;
+    background-color: #424242;
+    color: white; }
+
+/*CV.html slut*/
+/*projektfacilitering start*/
+.flex-containerpf {
+  padding-bottom: 2em;
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  background-color: white;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  align-content: space-around; }
+  .flex-containerpf .flex-itempf {
+    background-color: #a1887f;
+    /*#b0bec5;*/
+    width: 32%;
+    margin-top: 2%;
+    float: left;
+    margin-bottom: 1%;
+    border-style: solid;
+    padding: 1% 1% 1% 1%; }
+    .flex-containerpf .flex-itempf li a:hover {
+      color: #80cbc4; }
+    .flex-containerpf .flex-itempf h3 a:hover {
+      color: #80cbc4; }
+  .flex-containerpf .flex-itempfa {
+    background-color: #424242;
+    /*#b0bec5;*/
+    width: 32%;
+    color: white;
+    margin-top: 2%;
+    float: left;
+    margin-bottom: 1%;
+    border-style: solid;
+    border-color: black;
+    padding: 1% 1% 1% 1%; }
+    .flex-containerpf .flex-itempfa li a:hover {
+      color: #80cbc4; }
+    .flex-containerpf .flex-itempfa h3 a:hover {
+      color: #80cbc4; }
+
+/*projektfacilitering slut*/
+/*Kontakt start*/
+section.kontakt {
+  height: auto;
+  /*background-color: blue;*/ }
+
+/*Kontakt slut*/
+/*CSS footer start*/
+footer {
+  height: 60px;
+  background-color: #e0e0e0;
+  position: absolute;
+  width: 100%;
+  /*footer luk*/ }
+  footer div {
+    /*logoer ligger på linier med header*/
+    /* a luk*/ }
+    footer div a i.fa {
+      float: right;
+      margin-left: 5px;
+      margin-top: -25px;
+      margin-right: 15px; }
+    footer div a i.fa-facebook {
+      background-color: #ffffff;
+      width: 40px;
+      height: 40px;
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: black;
+      font-size: 25px;
+      /*#3b5998 farven sendes til mixin*/ }
+    footer div a i.fa-linkedin {
+      background-color: #ffffff;
+      width: 40px;
+      height: 40px;
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: black;
+      font-size: 25px;
+      /*#007bb5*/ }
+    footer div a i.fa-github-alt {
+      background-color: #ffffff;
+      width: 40px;
+      height: 40px;
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: black;
+      font-size: 25px;
+      /*#913399*/ }
+    footer div a i.fa-instagram {
+      background-color: #ffffff;
+      width: 40px;
+      height: 40px;
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: black;
+      font-size: 25px;
+      /*#000000*/ }
+
+/*CSS Footer slut*/
+/*Media queries starter her*/
+@media screen and (max-width: 834px) {
+  .flex-item1 {
+    width: 100%; }
+
+  .flex-item2 {
+    width: 100%; } }
+@media screen and (max-width: 628px) {
+  nav {
+    display: none;
+    /*nav menubar forsvinder*/ }
+
+  .flex-containerpf .flex-itempfa {
+    width: 100%; }
+  .flex-containerpf .flex-itempf {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -345,6 +345,7 @@ main {
       text-align: center;
       text-align: left;
       margin-left: 13%;
+      margin-right: 13%;
       font-size: 16px;
       margin-top: 0; }
   main section.wdown {
@@ -365,6 +366,7 @@ main {
       text-align: center;
       text-align: left;
       margin-left: 13%;
+      margin-right: 13%;
       font-size: 16px;
       margin-top: 0; }
   main section.kickdown {
@@ -385,6 +387,7 @@ main {
       text-align: center;
       text-align: left;
       margin-left: 13%;
+      margin-right: 13%;
       font-size: 16px;
       margin-top: 0; }
   main section.down {
@@ -424,6 +427,7 @@ section.refdown {
     text-align: center;
     text-align: left;
     margin-left: 13%;
+    margin-right: 13%;
     font-size: 16px;
     margin-top: 0; }
 
