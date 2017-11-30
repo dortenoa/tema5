@@ -155,9 +155,6 @@ main {
   /*background-color: pink;*/
   padding-top: 70px;
   padding-bottom: 1px;
-  /*div{
-    @extend .centerContent;
-  }*/
   /*INDEX Section .why class post-it area start*/
   /*why class post-it area slut*/
   /*INDEX Section .how class post-it area start*/
@@ -174,11 +171,7 @@ main {
   /*facilitering kickoff tekst i bunden*/ }
   main section.up {
     height: 640px;
-    margin-bottom: 2em;
-    /*background-image: url(../img/wcsort.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*border-bottom: solid 3px #bdbdbd;*/ }
+    margin-bottom: 2em; }
   main section .why {
     width: 100%;
     margin-top: 2em;
@@ -279,7 +272,10 @@ main {
       margin-bottom: 0;
       padding-top: 50px;
       text-align: left;
-      margin-left: 13%; }
+      margin-left: 13%;
+      margin-right: 13%; }
+    main section.pdown h2:hover {
+      color: #80cbc4; }
     main section.pdown p {
       color: white;
       text-align: center;
@@ -292,7 +288,7 @@ main {
     position: relative;
     /*max-width: 356px;*/
     width: auto;
-    margin: 0, auto; }
+    margin: 0; }
   main .containertext img {
     margin-bottom: -5px; }
   main .containertext .content {
@@ -320,6 +316,8 @@ main {
       padding-top: 60px;
       text-align: left;
       margin-left: 13%; }
+    main section.pfdown h2:hover {
+      color: #80cbc4; }
     main section.pfdown p {
       color: white;
       text-align: center;
@@ -340,6 +338,8 @@ main {
       padding-top: 50px;
       text-align: left;
       margin-left: 13%; }
+    main section.dtdown h2:hover {
+      color: #80cbc4; }
     main section.dtdown p {
       color: white;
       text-align: center;
@@ -361,6 +361,8 @@ main {
       padding-top: 50px;
       text-align: left;
       margin-left: 13%; }
+    main section.wdown h2:hover {
+      color: #80cbc4; }
     main section.wdown p {
       color: white;
       text-align: center;
@@ -382,6 +384,8 @@ main {
       padding-top: 50px;
       text-align: left;
       margin-left: 13%; }
+    main section.kickdown h2:hover {
+      color: #80cbc4; }
     main section.kickdown p {
       color: white;
       text-align: center;
@@ -407,6 +411,8 @@ main {
         margin-bottom: 0;
         padding-top: 65px;
         font-family: 'Lato', sans-serif; }
+      main section.down .h3 h3:hover {
+        color: #80cbc4; }
 
 /*CSS på referencer.html start*/
 section.refdown {
@@ -468,6 +474,7 @@ section.refdown {
     width: 32%;
     color: white;
     margin-top: 2%;
+    height: auto;
     float: left;
     margin-bottom: 1%;
     border-style: solid;
@@ -498,6 +505,34 @@ section.refdown {
 
 /*CSS referencer.html.slut*/
 /*CSS CV.html start*/
+section.cvdown {
+  height: 200px;
+  background-color: #212121;
+  border-bottom: solid 3px #bdbdbd;
+  margin-bottom: 0; }
+  section.cvdown h2 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 50px;
+    text-align: left;
+    margin-left: 13%;
+    font-family: 'Lato', sans-serif; }
+  section.cvdown p {
+    color: white;
+    text-align: center;
+    text-align: left;
+    margin-left: 13%;
+    margin-right: 13%;
+    font-size: 16px;
+    margin-top: 0; }
+
+.flex-itemcv h3 button, h2 button, h1 button {
+  background-color: #ffffff;
+  font-size: 16px;
+  border-radius: 12px;
+  font-family: 'Lato', sans-serif; }
+
 .flex-itemcv p {
   font-family: 'Lato', sans-serif; }
 
@@ -517,30 +552,34 @@ section.refdown {
   .flex-containercv .flex-itemcv {
     background-color: #a1887f;
     /*#b0bec5;*/
-    width: 98%;
-    height: auto;
+    width: 32%;
     margin-top: 2%;
     float: left;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     border-style: solid;
     padding: 1% 1% 1% 1%; }
-    .flex-containercv .flex-itemcv img {
-      float: right;
-      padding: 10px;
-      opacity: 0.8; }
-  .flex-containercv .flex-itemcv1 {
+  .flex-containercv .flex-itemcva {
     background-color: #424242;
-    width: 98%;
+    /*#b0bec5;*/
+    width: 32%;
+    color: white;
+    margin-top: 2%;
+    height: auto;
+    float: left;
+    margin-bottom: 1%;
+    border-style: solid;
+    border-color: black;
+    padding: 1% 1% 1% 1%; }
+  .flex-containercv .flex-itemcv1 {
+    background-color: #a1887f;
+    width: 28%;
     height: auto;
     margin-top: 2%;
     float: left;
     border-style: solid;
-    padding: 1% 1% 1% 1%;
-    color: white;
-    border-style: solid;
-    border-color: black; }
+    padding: 1% 1% 1% 1%; }
   .flex-containercv .flex-itemcv2 {
-    width: 98%;
+    width: 69%;
     height: auto;
     margin-top: 2%;
     float: left;
@@ -549,6 +588,10 @@ section.refdown {
     border-color: black;
     background-color: #424242;
     color: white; }
+    .flex-containercv .flex-itemcv2 img {
+      float: right;
+      padding: 10px;
+      opacity: 0.8; }
 
 /*CV.html slut*/
 /*projektfacilitering start*/
@@ -664,19 +707,46 @@ footer {
 /*CSS Footer slut*/
 /*Media queries starter her*/
 @media screen and (max-width: 834px) {
-  .flex-item1 {
+  .flex-container .flex-item1 {
+    width: 100%; }
+  .flex-container .flex-item2 {
     width: 100%; }
 
-  .flex-item2 {
-    width: 100%; } }
+  .flex-containercv .flex-itemcva {
+    width: 100%;
+    padding: 3% 7% 3% 7%; }
+  .flex-containercv .flex-itemcv {
+    width: 100%;
+    padding: 3% 7% 3% 7%; }
+  .flex-containercv .flex-itemcv1 {
+    width: 100%;
+    padding: 3% 7% 3% 7%; }
+  .flex-containercv .flex-itemcv2 {
+    width: 100%;
+    padding: 3% 7% 3% 7%; } }
+@media screen and (max-width: 725px) {
+  .flex-container .flex-item {
+    width: 100%;
+    padding: 3% 7% 3% 7%; }
+  .flex-container .flex-itema {
+    width: 100%;
+    padding: 3% 7% 3% 7%; } }
 @media screen and (max-width: 628px) {
   nav {
     display: none;
     /*nav menubar forsvinder*/ }
 
   .flex-containerpf .flex-itempfa {
-    width: 100%; }
+    width: 100%;
+    padding: 3% 7% 3% 7%; }
   .flex-containerpf .flex-itempf {
-    width: 100%; } }
+    width: 100%;
+    padding: 3% 7% 3% 7%; } }
+@media screen and (max-width: 525px) {
+  .cvdown h2 {
+    margin-right: 13%; }
+
+  .pfdown .h2 p {
+    margin-right: 13%; } }
 
 /*# sourceMappingURL=style.css.map */
